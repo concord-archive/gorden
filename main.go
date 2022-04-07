@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+
 	server := gin.Default()
 	server.SetTrustedProxies(nil)
 	server.GET("/__development/ping", ping)
